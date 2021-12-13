@@ -23,3 +23,33 @@ body {
     display: flex;
     gap: 30px;
 }
+
+.hero-container {
+    display: flex;
+    height: 470px;
+    padding: 0 10%;
+}
+
+.hero-container > div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-container h1 {
+    font-size: 60px;
+    width: 360px;
+}
+
+.hero-container p {
+    font-size: 30px;
+    width: 360px;
+}
+
+.hero-container > img {
+    width: 50%;
+    height: 323px;
+    align-self: center;
+}
