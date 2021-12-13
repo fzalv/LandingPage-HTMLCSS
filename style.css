@@ -1,3 +1,8 @@
+:root {
+    --gray: rgba(1, 1, 1, .1);
+    --darkgray: rgb(129, 129, 143);
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
@@ -11,7 +16,7 @@ body {
     padding: 0 10%;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 2px 4px 0 rgba(1, 1, 1, .1);
+    box-shadow: 0 2px 4px 0 var(--gray);
 }
 
 .navbar > h1 {
@@ -45,11 +50,49 @@ body {
 
 .hero-container p {
     font-size: 30px;
-    width: 360px;
+    color: var(--darkgray);
 }
 
 .hero-container > img {
     width: 50%;
     height: 323px;
     align-self: center;
+    border-radius: 15px;
+    box-shadow: 20px 20px 0 0 var(--gray);
+}
+
+.description-container {
+    height: 300px;
+    margin: 40px 0;
+    padding: 0 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description-container > div {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.description-container > div > div {
+    width: 500px;
+}
+
+.description-container > img {
+    width: 40%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.description-left-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.font-darkgray {
+    color: var(--darkgray);
 }
