@@ -213,3 +213,66 @@ footer {
 .footer-menu:hover {
     cursor: pointer;
 }
+
+@media only screen and (max-width: 420px){
+    .hero-container,
+    .description-container {
+        height: 100%;
+    }
+
+    .hero-container,
+    .description-container,
+    .content-container,
+    .what-container {
+        flex-wrap: wrap;
+    }
+
+    footer > p,
+    .hero-container > div,
+    .hero-container > img,
+    .description-container > div,
+    .description-container > div > div,
+    .description-container > img,
+    .what-container > div,
+    .what-container > div > div,
+    .what-container > img,
+    .button-container > .btn {
+        width: 100%;
+    }
+
+    .description-container > div {
+        padding: 5%;
+    }
+
+    .hero-container > div {
+        height: 250px;
+    }
+
+    .hero-container > img {
+        height: 100%;
+    }
+
+    .hero-container h1,
+    .hero-container p,
+    footer p {
+        text-align: center;
+    }
+
+    .hero-container h1 {
+        font-size: 36px;
+    }
+
+    .hero-container p {
+        font-size: 18px;
+    }
+
+    .content-container {
+        grid-template-columns: 1fr;
+    }
+
+    nav > .nav-menu,
+    footer > .footer-menu {
+        display: none;
+    }
+
+}
