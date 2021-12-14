@@ -195,3 +195,21 @@ body {
     border-radius: 5px;
     font-weight: bold;
 }
+
+footer {
+    height: 85px;
+    display: flex;
+    padding: 0 10%;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 8px 2px 4px 8px var(--gray);
+}
+
+.footer-menu {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-menu:hover {
+    cursor: pointer;
+}
