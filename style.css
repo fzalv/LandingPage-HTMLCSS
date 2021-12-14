@@ -1,6 +1,7 @@
 :root {
     --gray: rgba(1, 1, 1, .1);
     --darkgray: rgb(129, 129, 143);
+    --primary: #6b46c1;
 }
 
 body {
@@ -144,4 +145,53 @@ body {
     width: 100%;
     object-fit: fill;
     height: 240px;
+}
+
+.what-container {
+    max-height: 600px;
+    padding: 0 10%;
+    display: flex;
+}
+
+.what-container > div {
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--gray);
+}
+
+.what-container > div > div {
+    width: 400px;
+}
+
+.what-container > img {
+    width: 52%;
+}
+
+.what-container h1 {
+    font-size: 40px;
+}
+
+.what-container > div > .footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 10%;
+    margin: 40px 0;
+}
+
+.btn {
+    background: var(--primary);
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
 }
